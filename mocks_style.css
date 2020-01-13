@@ -1,0 +1,85 @@
+body {
+  height: 100vh;
+  position: relative;
+}
+
+button {
+  box-sizing: border-box;
+  height: 50px;
+  width: 130px;
+  background-color: #57A6F9;
+  font-size: 20px;
+  color: white;
+  border-radius: 5%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%); */
+}
+
+button:hover {
+  background-color: rgb(75, 64, 170);
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+#container {
+  background-color: rgb(223, 223, 223);
+  width: 500px;
+  border: 2px rgb(151, 148, 148) solid;
+  border-radius: 4%;
+}
+
+img {
+  width: 100%;
+  border-top-left-radius: 4%;
+  border-top-right-radius: 4%;
+}
+
+hr {
+  background-color: rgb(151, 148, 148);
+  height: 1px;
+  border: 0px;
+}
+
+.text {
+  padding: 15px 20px;
+}
+
+#title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#meme_container {
+  height: 100px;
+}
+
+.single_meme {
+  height: 100px;
+  width: 200px;
+  display: inline-block;
+}
+
+.single_meme:hover .modal{
+  transform: translateY(-100%);
+  visibility: visible;
+}
+
+.single_meme div {
+  height: 100%;
+  width: 100%;
+}
+
+.meme {
+  background-image: url("https://sadanduseless.b-cdn.net/wp-content/uploads/2014/03/derp1.jpg");
+  background-size: cover;
+}
+
+.modal {
+  visibility: hidden;
+  opacity: 0.5;
+}
